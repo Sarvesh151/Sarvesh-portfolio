@@ -852,7 +852,36 @@
                 transform: translateY(-10px) translateX(-50%);
             }
         }
+        /* HERO RESUME BUTTON */
+.hero-resume {
+    margin-top: 20px;
+}
+
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 28px;
+    background: linear-gradient(45deg, var(--neon), var(--secondary));
+    color: var(--dark-bg);
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 20px rgba(var(--neon), 0.4);
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(var(--neon), 0.7);
+}
+
+.hero-btn i {
+    font-size: 1rem;
+}
     </style>
+
 </head>
 <body>
     <!-- 3D Background -->
@@ -865,6 +894,13 @@
                 <img src="sarvesh photo.jpg" alt="Abhishek Verma" class="profile-img floating">
                 <h1>Sarvesh Kumar Maurya</h1>
                 <p class="tagline">Data Analyst | Data Storyteller</p>
+                <div class="hero-resume">
+    <a href="resume.pdf" download class="hero-btn">
+        <i class="fas fa-download"></i>
+        Download Resume
+    </a>
+</div><br>
+<br>
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
@@ -934,6 +970,7 @@
                         </div>
                     </div>
                 </li>
+                
                 <li>
                     <a href="#experience" class="nav-link">
                         <i class="fas fa-briefcase"></i>
@@ -1530,7 +1567,7 @@
                     <div class="education-details">
                         <div class="education-detail-item">
                             <i class="fas fa-star"></i>
-                            <span>CGPA: 8.79</span>
+                            <span>CGPA: 8.90</span>
                         </div>
                         <div class="education-detail-item">
                             <i class="fas fa-book"></i>
@@ -1566,7 +1603,7 @@
                     <div class="education-details">
                         <div class="education-detail-item">
                             <i class="fas fa-percentage"></i>
-                            <span>12th Grade: 76.2%</span>
+                            <span>12th Grade: 76.20%</span>
                         </div>
                         <div class="education-detail-item">
                             <i class="fas fa-percentage"></i>
@@ -2311,13 +2348,14 @@
                     </div>
                     
                     <div class="project-actions">
-                        <a href="#" class="project-btn">
-                            <i class="fas fa-eye"></i> View Demo
-                        </a>
-                        <a href="#" class="project-btn outline">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
+    <a href="https://github.com/Sarvesh151/E-commerce-dashboard/blob/main/E-commerce-dashboard.pdf" target="_blank" class="project-btn">
+        <i class="fas fa-eye"></i> View Demo
+    </a>
+    
+    <a href="https://github.com/Sarvesh151/E-commerce-dashboard/tree/main" target="_blank" class="project-btn outline">
+        <i class="fab fa-github"></i> Source Code
+    </a>
+</div>
                 </div>
             </div>
             
@@ -2372,13 +2410,14 @@
                     </div>
                     
                     <div class="project-actions">
-                        <a href="#" class="project-btn">
-                            <i class="fas fa-eye"></i> View Demo
-                        </a>
-                        <a href="#" class="project-btn outline">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
+    <a href="https://github.com/Sarvesh151/Business-stakeholder-Dashboard/blob/main/dashboard%20for%20bussiness%20stakeholder.pdf" target="_blank" class="project-btn">
+        <i class="fas fa-eye"></i> View Demo
+    </a>
+    
+    <a href="https://github.com/Sarvesh151/Business-stakeholder-Dashboard" target="_blank" class="project-btn outline">
+        <i class="fab fa-github"></i> Source Code
+    </a>
+</div>
                 </div>
             </div>
             
@@ -2442,13 +2481,14 @@ Conducted correlation analysis to determine factors influencing employee attriti
                     </div>
                     
                     <div class="project-actions">
-                        <a href="#" class="project-btn">
-                            <i class="fas fa-eye"></i> View Report
-                        </a>
-                        <a href="#" class="project-btn outline">
-                            <i class="fas fa-download"></i> Download PDF
-                        </a>
-                    </div>
+    <a href="https://github.com/Sarvesh151/Project-HR-Analytics-/blob/main/HR_Dashboard.pdf" target="_blank" class="project-btn">
+        <i class="fas fa-eye"></i> View Demo
+    </a>
+    
+    <a href="https://github.com/Sarvesh151/Project-HR-Analytics-" target="_blank" class="project-btn outline">
+        <i class="fab fa-github"></i> Source Code
+    </a>
+</div>
                 </div>
             </div>
         </div>
@@ -2648,40 +2688,35 @@ Conducted correlation analysis to determine factors influencing employee attriti
         }
     }
 </style>
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Contact Me</h2>
-            </div>
-            <div class="contact-form" data-tilt data-tilt-max="5" data-tilt-speed="400">
-                <form>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
+    <form action="https://formspree.io/f/xwvwlbqe" method="POST">
 
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" name="name" required>
+    </div>
+
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+        <label>Subject</label>
+        <input type="text" name="subject">
+    </div>
+
+    <div class="form-group">
+        <label>Message</label>
+        <textarea name="message" required></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Send Message</button>
+
+</form>
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026.Sarvesh Kumar Muarya | All rights reserved.</p>
+            <p>&copy; 2024.Sarvesh Kumar Muarya | All rights reserved.</p>
             <div class="social-links" style="margin-top: 1.5rem;">
                 <a href="https://www.linkedin.com/in/sarvesh-kumar-maurya-458780371/"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/Sarvesh151"><i class="fab fa-github"></i></a>
